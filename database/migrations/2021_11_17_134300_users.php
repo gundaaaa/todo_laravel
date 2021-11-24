@@ -13,7 +13,12 @@ class Users extends Migration
      */
     public function up()
     {
-       
+        Schema::create('users', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('name')->charset("utf8");
+            $table->string('mail')->charset("utf8");
+            $table->string('password')->charset("utf8");
+        });
     }
 
     /**
@@ -23,6 +28,6 @@ class Users extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('users');
     }
 }

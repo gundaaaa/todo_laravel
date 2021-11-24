@@ -17,7 +17,7 @@ class Message extends Migration
             $table->increments('id');
             $table->string('name')->charset("utf8");
             $table->text('message');
-            $table->date('time');
+            $table->date('time')->default(DB::raw('CURRENT_TIMESTAMP'));
         });
     }
 
@@ -28,6 +28,6 @@ class Message extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('message');
     }
 }
