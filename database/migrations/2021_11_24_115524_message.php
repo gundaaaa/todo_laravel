@@ -17,7 +17,8 @@ class Message extends Migration
             $table->increments('id');
             $table->string('name')->charset("utf8");
             $table->text('message');
-            $table->date('time')->default(DB::raw('CURRENT_TIMESTAMP'));
+            // $table->date('time')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('time')->nullable();
         });
     }
 
