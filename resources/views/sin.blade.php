@@ -1,6 +1,5 @@
 @extends('layouts.todo')
 @section('title','新規登録画面')
-
 <body>
     @section('menubar')
     <!-- //処理を行う宛先を指定 -->

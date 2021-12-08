@@ -1,5 +1,12 @@
 @extends('layouts.todo')
 @section('title','商品向上アンケート')
+<style>
+ form {
+     background-image: url(../icon/StockSnap_C7LDIUGZ9K.jpg);
+    background-size: contain;
+ }
+
+</style>
 
 <body>
     @section('menubar')
@@ -47,7 +54,7 @@
             });
         </script>
     </form>
-
+    <!-- <img class="picture" src="/icon/StockSnap_C7LDIUGZ9K.jpg" alt=""> -->
 
     <p>件名:{{$msg}}</p>
     <P>内容:{{$mmm}}</P>

@@ -1,5 +1,11 @@
 @extends('layouts.todo')
 @section('title','login画面')
+<style>
+    form {
+        background-image: url(../icon/StockSnap_MY9TVNEESX.jpg);
+        background-size: cover;
+    }
+</style>
 
 <body>
     @section('menubar')
