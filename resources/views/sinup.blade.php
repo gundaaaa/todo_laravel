@@ -2,7 +2,7 @@
 @section('title','商品向上アンケート')
 <style>
  form {
-     background-image: url(../icon/StockSnap_C7LDIUGZ9K.jpg);
+     background-image: url(../icon/StockSnap_RRLUTE8DRP.jpg);
     background-size: contain;
  }
 
